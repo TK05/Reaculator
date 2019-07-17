@@ -54,7 +54,7 @@ export default function () {
           </Option>
         ))}
         <Footer>
-          <span><a href="/">Source Code <GoMarkGithub /></a></span>
+          <span><a href="https://github.com/TK05/Reaculator">Source Code <GoMarkGithub /></a></span>
           <span><a href="/">lightweightpaint</a></span>
         </Footer>
       </Menu>
