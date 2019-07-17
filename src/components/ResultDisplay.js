@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components/macro'
+import { up } from 'styled-breakpoints'
 
 import { useDataState } from '../context/data-context'
 import { resultTextColor } from '../styles/themes'
@@ -34,6 +35,10 @@ export default function () {
 
 const DisplayResult = styled.div`
   color: ${resultTextColor};
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: right;
+
+  ${up('tablet')} {
+    font-size: 3rem;
+  }
 `

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import styled from 'styled-components/macro'
+import { up } from 'styled-breakpoints'
 
 import { useDataDispatch, useDataState } from '../context/data-context'
 import { caretColor, displayBgColor, displayTextColor } from '../styles/themes'
@@ -73,6 +74,10 @@ const Caret = styled.div`
       opacity: 0;
     }
   }
+
+  ${up('tablet')} {
+    height: 6rem;
+  }
 `
 
 const DisplayOuter = styled.div`
@@ -87,23 +92,42 @@ const DisplayOuter = styled.div`
 
 const Display = styled.div`
   color: ${displayTextColor};
-  font-size: 5rem;
+  font-size: 4rem;
   transition: font-size 0.3s;
 
   float: right;
 
   &.small {
-    font-size: 4rem;
-    transition: font-size 0.3s;
-  }
-
-  &.smaller {
     font-size: 3rem;
     transition: font-size 0.3s;
   }
 
-  &.smallest {
+  &.smaller {
     font-size: 2.5rem;
     transition: font-size 0.3s;
+  }
+
+  &.smallest {
+    font-size: 2rem;
+    transition: font-size 0.3s;
+  }
+
+  ${up('tablet')} {
+    font-size: 5rem;
+
+    &.small {
+      font-size: 4rem;
+      transition: font-size 0.3s;
+    }
+
+    &.smaller {
+      font-size: 3rem;
+      transition: font-size 0.3s;
+    }
+
+    &.smallest {
+      font-size: 2.5rem;
+      transition: font-size 0.3s;
+    }
   }
 `
