@@ -1,4 +1,4 @@
-//  Builds a postfix array of the expression.
+//  Builds an infix array of the expression.
 //    Also returns a count of numbers in the expression.
 const buildExpression = input => {
   let splitIndex = 0;

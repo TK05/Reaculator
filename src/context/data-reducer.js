@@ -20,7 +20,7 @@ const updateDataState = (input, state) => {
     //  Change operators to JS operators while still a string
     const jsOpInput = changeOperators(validInput)
 
-    //  Postfix expression array w/ comma separators
+    //  Infix expression array w/ comma separators
     const [expression, numberCount] = buildExpression(jsOpInput)
 
     //  Format expression for display and change operators to visual form
