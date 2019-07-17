@@ -1,11 +1,15 @@
 {
-  "name": "calculator",
-  "version": "0.1.0",
+  "name": "reaculator",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-icons": "^3.7.0",
+    "react-scripts": "3.0.1",
+    "styled-breakpoints": "^6.6.3",
+    "styled-components": "^5.0.0-beta.5",
+    "styled-theming": "^2.2.0"
   },
   "scripts": {
     "start": "react-scripts start",

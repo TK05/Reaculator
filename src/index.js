@@ -1,12 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+
+import DataProvider from './context/data-context'
+import ThemeStateProvider from './context/theme-context'
+import GlobalStyle from './styles/globalStyle'
+import Calculator from './components/Calculator'
+
+function App() {
+  return (
+    <DataProvider>
+      <GlobalStyle />
+      <ThemeStateProvider>
+        <Calculator />
+      </ThemeStateProvider>
+    </DataProvider>
+  );
+}
 
 ReactDOM.render(<App />, document.getElementById('root'));
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
